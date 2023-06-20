@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    color: blue;
+}
+
+.seccion-productos{
+    background-color: rgb(243, 243, 243);
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+.logo{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px;
+   color: #3b86ff;
+   font-size: 1.5rem;
+}
+
+.logo a:visited{
+    color: #3b86ff;
+}
+
+.logo h1{
+    font-weight: 100;
+}
+.toda-lista-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #3b86ff;
+    color: white;
+}
+
+.lista-menu-active{
+    color: white;
+    font-weight: bold;
+    border-bottom: solid 2px white;
+}
+
+.lista-menu-active:hover{
+    cursor: pointer;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    color: #3b86ff;
+}
+
+.caja-boton-volver{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boton-volver{
+    background-color: #3b86ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 20px;
+}
+
+.boton-volver :visited{
+    color: white;
+}
+
+footer p {
+    background-color:blue;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+.footer-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    padding: 20px;
+}
+
+.input-footer{
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 0 26% 0 15px;
+    border: solid 1px #ced4db;  
+}
+
+.boton-footer{
+    position: absolute;
+    width: 100px;
+    padding: 0;
+    background: #3b86ff;
+    color: #fff;
+    height: 40px;
+    border: none;
+}
+
+.producto{
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgb(167, 167, 167);
+}
+
+.producto-imagen{
+    border-radius: 8px;
+}
+
+.titulo-productos{
+    margin-bottom: 2rem;
+    color: #3b86ff;
+}
+
+.contenedor-productos{
+   display: grid;
+   grid-template-columns: repeat(4,1fr); 
+   gap: 1rem;
+}
+
+.producto-detalles {
+    background-color: #3b86ff;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-imagen{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+}
+
+.producto-boton{
+    border: 0;
+    background-color: white;
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border:2px solid #3b86ff ;
+}
+
+.producto-boton:hover{
+    background-color: #b3d0ff;
+    color: white;
+}
+
+.contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto-imagen{
+    width: 4rem;
+}
+
+.carrito-producto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.carrito-producto small{
+    font-size: .75rem;
+    color: #3b86ff;
+}
+
+.carrito-producto-eliminar{
+    border: 0;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+.carrito-total{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.carrito-total-vaciar{
+    border: 0;
+    background-color: #3b86ff;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.carrito-total-suma{
+    padding-right: 1rem;
+}
+
+.carrito-comprar{
+    border: 0;
+    background-color: #3b86ff;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.carrito-total-derecha{
+    display: flex;
+}
+
+.titulo-carrito{
+    color: #3b86ff;
+}
+
+.disabled {
+    display: none;
+}
